@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box\;
+
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    height: 50vh;
+    width: 100px;
+    border: 5px solid black;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    background-color: rgb(172, 172, 163);
+}
+
+.red {
+    height: 30%;
+    width: 100%;
+    background-color: red;
+    border-radius: 50%;
+    opacity: 0;
+    animation: RedLight 5s; 
+}
+
+.yellow {
+    height: 30%;
+    width: 100%;
+    background-color: yellow;
+    border-radius: 50%;
+    opacity: 0;
+    animation: YellowLight 5s 7s;
+}
+
+.green {
+    height: 30%;
+    width: 100%;
+    background-color: green;
+    border-radius: 50%;
+    opacity: 0;
+    animation: GreenLight 5s 13s;
+}
+
+@keyframes RedLight {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes YellowLight {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes GreenLight {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
